@@ -1,85 +1,84 @@
-
-      body {
-        font-family: Arial, sans-serif;
-        background-color: antiquewhite;
-      }
-      
-     h1 {
-  color: #4c4c4c;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+  }
+  
+ h1 {
+color: #4c4c4c;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
 }
-      
-      .question {
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-      }
-      
-      .question h2 {
-        margin-top: 0;
-      }
-      
-      .question p {
-        margin-bottom: 10px;
-      }
-      
-      .choices {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-      }
-      
-      .choice {
-        flex-basis: calc(50% - 10px);
-        margin: 5px;
-        padding: 10px;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
+  
+.question {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .question h2 {
+    margin-top: 0;
+  }
+  
+  .question p {
+    margin-bottom: 10px;
+  }
+  
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    flex-basis: calc(50% - 10px);
+    margin: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .choice:hover {
+    background-color: #ddd;
+  }
+  
+  .feedback {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #submit-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
         border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-      }
-      
-      .choice:hover {
-        background-color: #ddd;
-      }
-      
-      .feedback {
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      
-      #submit-button {
-			background-color: #4CAF50;
-			color: white;
-			border: none;
-			border-radius: 5px;
-			padding: 10px 20px;
-			margin-top: 20px;
-			font-size: 16px;
-			cursor: pointer;
-			transition: background-color 0.3s ease;
-		}
+    }
 
 
-      #submit-button:hover {
-        background-color: #3e8e41;
-      }
-      
-      .result {
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-      
-      .correct {
-        color: green;
-      }
-      
-      .incorrect {
-        color: red;
-      }
+  #submit-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .result {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .correct {
+    color: green;
+  }
+  
+  .incorrect {
+    color: red;
+  }
