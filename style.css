@@ -4,12 +4,12 @@
         background-color: antiquewhite;
       }
       
-      h1 {
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
-	color: #4c4c4c;
-      }
+     h1 {
+  color: #4c4c4c;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
       
       .question {
         margin-bottom: 20px;
