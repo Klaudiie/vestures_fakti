@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Quiz</h1>
+	<form id="quiz-form">
+		<div class="question">
+			<h3>Question 1: What is the capital of France?</h3>
+			<label><input type="radio" name="q1" value="a">A. Paris</label><br>
+			<label><input type="radio" name="q1" value="b">B. Madrid</label><br>
+			<label><input type="radio" name="q1" value="c">C. Rome</label><br>
+			<label><input type="radio" name="q1" value="d">D. Berlin</label><br>
+		</div>
+		<div class="question">
+			<h3>Question 2: What is the capital of Japan?</h3>
+			<label><input type="radio" name="q2" value="a">A. Beijing</label><br>
+			<label><input type="radio" name="q2" value="b">B. Tokyo</label><br>
+			<label><input type="radio" name="q2" value="c">C. Seoul</label><br>
+			<label><input type="radio" name="q2" value="d">D. Bangkok</label><br>
+		</div>
+		<!-- Repeat for Questions 3-10 -->
+		<button type="submit">Submit</button>
+	</form>
+	<div id="result"></div>
+	<script src="script.js"></script>
+</body>
+</html>
