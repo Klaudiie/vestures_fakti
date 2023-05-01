@@ -12,7 +12,10 @@
 <body>
     <header>
         <h1>Vēstures fakti</h1>
-        <input type="text" id="search" placeholder="Meklēt...">
+        <form>
+		<input type="text" id="search-bar" placeholder="Meklēt Wikipedia...">
+		<button type="meklēt">Search</button>
+	</form>
     </header>
 
     <main>
@@ -85,6 +88,13 @@
     </main>
 
     <script>
+       const searchBar = document.getElementById("search-bar");
+searchBar.closest("form").addEventListener("submit", (event) => {
+	event.preventDefault();
+	window.location.href = `https://en.wikipedia.org/wiki/${searchBar.value}`;
+});
+
+        
         // document.getElementById("test").style.display = "none";
         
         // function hide() {
