@@ -1,0 +1,195 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vēstures fakti</title>
+    <link rel="stylesheet" href="datorikas_projekts.css">
+    <link rel="" href="">
+</head>
+
+<body>
+    <header>
+        <h1>Vēstures fakti</h1>
+        <input type="text" id="search" placeholder="Meklēt...">
+    </header>
+
+    <main>
+        <div id="fact1">
+            <img src="https://historyflame.com/wp-content/uploads/2020/10/maxresdefault.jpg" alt="Vēstures bilde">
+            <br>
+            <p>Dzelzs laikmets ir pēdējais lielais aizvēstures periods. Dzelzs laikmets sekoja pēc Vara laikmeta un
+                Bronzas laikmeta, kurš savukārt sekoja tūlīt pēc kādas no Akmens laikmeta stadijām.</p>
+        </div>
+
+        <div id="fact2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/201708_Reykjavik_centre_a11.jpg">
+            <br>
+            <p>Islandē ir pasaulē vecākais parlaments.</p>
+        </div>
+
+        <div id="fact3">
+            <img src="https://i.guim.co.uk/img/media/5c824051c4c858abc4bbf583b88f4fff9efd664d/0_377_6016_3608/master/6016.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=ae2cf52f1ca93086cbb736ebcdd195aa" alt="Vēstures bilde">
+            <br>
+            <p>Zirgs kļuva par senatoru Senajā Romā.</p>
+        </div>
+
+        <div id="fact4">
+            <img src="https://pbs.twimg.com/media/DYa73N5W0AAAR9O.jpg" alt="Vēstures bilde">
+            <br>
+            <p>Viens no svarīgākajiem notikumiem Lielo ģeogrāfisko notikumu vēsturē bija brauciens apkārt zemeslodei,
+                kuru piecos kuģos pirmie veica spāņu jūrasbraucēji Fernana Magelāna vadībā 1519. – 1522.gadā.</p>
+        </div>
+
+        <div id="fact5">
+            <img src="https://media.cnn.com/api/v1/images/stellar/prod/150225145949-aman-rat.jpg?q=w_3049,h_2048,x_0,y_0,c_fill">
+            <br>
+            <p>Viduslaikos žurkas nogalināja vairāk nekā 75 miljonus eiropiešu.</p>
+        </div>
+
+        <div id="fact6">
+            <img src="https://cdn.britannica.com/79/4679-050-BC127236/Titanic.jpg" alt="Vēstures bilde">
+            <br>
+            <p>Tika prognozēta Titānika nogrimšana.</p>
+        </div>
+
+        <div id="fact7">
+            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/03/25/12/eiffel.jpg" alt="Vēstures bilde">
+            <br>
+            <p>Eifeļa tornis sākotnēji bija paredzēts Barselonai.</p>
+        </div>
+
+        <div id="fact8">
+            <img src="https://www.gannett-cdn.com/-mm-/6cb0566daad6b8973e2c456e7a61df50f54939b5/c=0-117-1408-1994/local/-/media/2017/01/04/USATODAY/USATODAY/636191149244091355-GettyImages-537365893.jpg" alt="Vēstures bilde">
+            <br>
+            <p>Pizas tornis nekad nav stāvējis taisni.</p>
+        </div>
+
+        <div id="fact9">
+            <img src="https://www.firstonline.info/wp-content/uploads/2020/10/Statua-della-Liberta.png" alt="Vēstures bilde">
+            <br>
+            <p>Brīvības statuja kādreiz bija bāka.</p>
+        </div>
+
+        <div id="fact10">
+            <img src="https://benfranklinsworld.com/wp-content/uploads/2018/07/AdamsJeffersonFeatuer-1024x829.jpg" alt="Vēstures bilde">
+            <br>
+            <p>Divi prezidenti nomira dažu stundu laikā viens no otra (Džons Adamss un Tomass Džefersons).</p>
+        </div>
+
+        <input type="button" id="generate-btn" value="Nākamais fakts" onclick="a()">
+        <input type="button" id="test" value="Tests" onclick="b()">
+
+    </main>
+
+    <script>
+        // document.getElementById("test").style.display = "none";
+        
+        // function hide() {
+        //     if (x = 9) {
+        //         document.getElementById("test").style.display = "none";
+
+        //     }
+        //     x++;
+        //     console.log(x);
+
+        // }
+        let random = Math.floor(Math.random() * 10) + 1;
+        console.log(random);
+
+        // document.getElementById("generate-btn2").style.display = "none";
+        // document.getElementById("test").style.display = "none"
+
+        document.getElementById("fact1").style.display = "block";
+        document.getElementById("fact2").style.display = "none";
+        document.getElementById("fact3").style.display = "none";
+        document.getElementById("fact4").style.display = "none";
+        document.getElementById("fact5").style.display = "none";
+        document.getElementById("fact6").style.display = "none";
+        document.getElementById("fact7").style.display = "none";
+        document.getElementById("fact8").style.display = "none";
+        document.getElementById("fact9").style.display = "none";
+        document.getElementById("fact10").style.display = "none";
+
+        let x = 0;
+        function a() {
+            document.getElementById("generate-btn").style.display = "block";
+            // document.getElementById("generate-btn2").style.display = "block";
+            // document.getElementById("test").style.display = "none";
+            // hide();
+
+            // document.getElementById("fact1").style.display = "none";
+            // document.getElementById("fact2").style.display = "block";
+            // document.getElementById("fact3").style.display = "none";
+            // document.getElementById("fact4").style.display = "none";
+            // document.getElementById("fact5").style.display = "none";
+            // document.getElementById("fact6").style.display = "none";
+            // document.getElementById("fact7").style.display = "none";
+            // document.getElementById("fact8").style.display = "none";
+            // document.getElementById("fact9").style.display = "none";
+            // document.getElementById("fact10").style.display = "none";
+
+            
+            console.log(x);
+            switch (x) {
+                case 0:
+                    document.getElementById("fact1").style.display = "none";
+                    document.getElementById("fact2").style.display = "block";
+                    x=1;
+                        break;
+                case 1:
+                    document.getElementById("fact2").style.display = "none";
+                    document.getElementById("fact3").style.display = "block";
+                    x=2;
+                        break;
+                case 2:
+                    document.getElementById("fact3").style.display = "none";
+                    document.getElementById("fact4").style.display = "block";
+                    x=3;
+                        break;
+                case 3:
+                    document.getElementById("fact4").style.display = "none";
+                    document.getElementById("fact5").style.display = "block";
+                    x=4;
+                        break;
+                case 4:
+                    document.getElementById("fact5").style.display = "none";
+                    document.getElementById("fact6").style.display = "block";
+                    x=5;
+                        break;
+                case 5:
+                    document.getElementById("fact6").style.display = "none";
+                    document.getElementById("fact7").style.display = "block";
+                    x=6;
+                        break;
+                case 6:
+                    document.getElementById("fact7").style.display = "none";
+                    document.getElementById("fact8").style.display = "block";
+                    x=7;
+                        break;
+                case 7:
+                    document.getElementById("fact8").style.display = "none";
+                    document.getElementById("fact9").style.display = "block";
+                    x=8;
+                        break;
+                case 8:
+                    document.getElementById("fact9").style.display = "none";
+                    document.getElementById("fact10").style.display = "block";
+                    x=9;
+                        break;
+            }
+        }
+
+        function b(){
+
+        }
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
+
