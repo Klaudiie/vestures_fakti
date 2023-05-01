@@ -1,7 +1,7 @@
 const quizForm = document.getElementById("quiz-form");
 const result = document.getElementById("result");
 
-const answers = ["a", "b", "c", "d", "a", "b", "c", "d", "a", "b"];
+const answers = ["a", "c", "d", "d", "b", "c", "d", "c", "b", "d"];
 
 quizForm.addEventListener("submit", (event) => {
 	event.preventDefault();
